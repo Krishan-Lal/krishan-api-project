@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather API</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body id="bgImg" style="background:url(/img/sunny.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-10 col-sm-12 mx-auto">
+        <div class="card card-body text-center mt-5">
+          <h3>Weather API</h3>
+          <form id="getWeather">
+              <input id="city" type="text" placeholder="City">
+              <input id="state" type="text" placeholder="State">
+              <input id="w-search" type="button" value="Search">
+        </form>
+        </div>
+      </div>
+    </div>
+    <div class="row d-none" id="showCard">
+      <div class="col-lg-6 col-md-10 col-sm-12 mx-auto">
+        <div class="card card-body text-center mt-2 bg-primary bg-gradient bg-opacity-50">
+          <h1 id="w-loc"></h1>
+          <h3 id="w-desc"></h3>
+          <h1 class="display-1" id="w-temp"></h1>
+          <img id="w-icon" class="mx-auto" width="25%">
+          <ul id="w-details" class="list-group mt-3">
+            <li class="list-group-item" id="w-humidity"></li>
+            <li class="list-group-item" id="w-feels-like"></li>
+            <li class="list-group-item" id="w-wind"></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
